@@ -19,8 +19,8 @@
  *
  * \section install Installation
  *
- * - Simply put glib2d.c and glib2d.h in your source directory. \n
- * - Then add glib2d.o and link "-lpng -ljpeg -lz -lpspgu -lm -lpspvram"
+ * - Simply put `glib2d.c` and `glib2d.h` in your source directory. \n
+ * - Then add `glib2d.o` and link `-lpng -ljpeg -lz -lpspgu -lm -lpspvram`
  *     in your Makefile.
  * - You're done !
  *
@@ -36,8 +36,8 @@
  * Please report bugs or submit ideas at : \n geecko.dev@free.fr \n\n
  * Get the full documentation on : \n http://geecko.dev.free.fr \n\n
  * Also stay tuned on... \n
- * https://github.com/GeeckoDev (contributors would be a plus!) \n
- * http://twitter.com/GeeckoDev
+ * https://github.com/libcg (contributors would be a plus!) \n
+ * http://twitter.com/libcg
  */
 
 /**
@@ -306,7 +306,7 @@ void g2dBeginRects(g2dTexture *tex);
 
 /**
  * \brief Begins lines rendering.
- * @param line_mode A g2dLine_Mode constant.
+ * @param mode A g2dLine_Mode constant.
  *
  * This function begins object rendering. Calls g2dReset().
  * Two g2dAdd() calls per object.
@@ -354,7 +354,7 @@ void g2dReset();
 
 /**
  * \brief Flips the screen.
- * @param flip_mode A g2dFlip_Mode constant.
+ * @param mode A g2dFlip_Mode constant.
  *
  * This function must be called at the end of the loop.
  * Renders the whole display list to the draw buffer.
@@ -409,7 +409,7 @@ void g2dTexFree(g2dTexture **tex);
 /**
  * \brief Loads an image.
  * @param path Path to the file.
- * @param tex_mode A g2dTex_Mode constant.
+ * @param mode A g2dTex_Mode constant.
  * @returns Pointer to the generated texture.
  *
  * This function loads an image file. There is support for PNG & JPEG files
@@ -429,7 +429,7 @@ void g2dResetCoord();
 
 /**
  * \brief Set coordinate mode.
- * @param coord_mode A gCoord_Mode.
+ * @param mode A gCoord_Mode.
  *
  * This function must be called during object rendering.
  * Defines where the coordinates correspond in the object.
