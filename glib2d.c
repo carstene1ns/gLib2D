@@ -25,6 +25,8 @@
 #include <vram.h>
 #include <malloc.h>
 #include <math.h>
+#include <stdio.h>
+#include <string.h>
 
 #ifdef USE_PNG
 #include <png.h>
