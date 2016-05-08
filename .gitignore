@@ -1,0 +1,14 @@
+
+# obj/libs
+*.o
+*.a
+*.elf
+
+# psp
+*.PBP
+*.SFO
+*.prx
+
+# doxygen
+html/
+latex/
